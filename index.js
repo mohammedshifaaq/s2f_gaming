@@ -102,6 +102,7 @@ document.querySelectorAll('.card button').forEach(button => {
           statusDiv.style.color = 'green';
           statusDiv.textContent = 'Order sent successfully! Thank you.';
           form.reset();
+          document.getElementById('quantity').value = 1;
 
           setTimeout(() => {
             closeModal();
@@ -143,4 +144,5 @@ document.getElementById("moreBtn").addEventListener("click", function() {
     } else {
       this.textContent = "Hide";
     }
+
   });
